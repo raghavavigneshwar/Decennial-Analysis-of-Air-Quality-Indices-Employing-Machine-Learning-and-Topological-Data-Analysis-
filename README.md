@@ -35,9 +35,16 @@ Before running the project, make sure you have the following:
 - Python 3.8+ and the required dependencies (listed in `environment.yml`).
 - Access to the AQI dataset.
 
-## Setup and Installation
+## Project Workflow
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-repo/AQI-Analysis-Azure-ML.git
-   cd AQI-Analysis-Azure-ML
+1. **Data Preprocessing**: AQI data is preprocessed to clean missing values, engineer features, and normalize the data.
+2. **Model Training**: Multiple machine learning models, such as XGBoost, Random Forest, and Logistic Regression, are trained using a custom component.
+3. **Model Evaluation**: Each model is evaluated based on metrics such as accuracy, precision, recall, and F1-score.
+
+## Results
+
+The XG Boost model achieved the best performance with an f1 score of 88% on the test dataset. The model was selected for deployment based on its business suitability and predictive power.
+
+## Conclusion
+
+This project demonstrates the power of Azure Machine Learning in building scalable and reusable machine learning workflows. By leveraging the modularity of components and pipelines, this project automates the AQI analysis and prediction workflow, providing accurate insights into air quality levels.
