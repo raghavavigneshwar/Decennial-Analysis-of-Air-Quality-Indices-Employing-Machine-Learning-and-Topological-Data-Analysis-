@@ -1,4 +1,11 @@
-# AQI Analysis Using Azure Machine Learning
+# AQI Analysis and Prediction Projects
+
+This repository contains two distinct projects focusing on Air Quality Index (AQI) analysis and prediction:
+
+1. **AQI Analysis Using Azure Machine Learning**
+2. **AQI Prediction and Classification Using Machine Learning and Clustering with TDA**
+
+# Project 1: AQI Analysis Using Azure Machine Learning
 
 This project focuses on analyzing Air Quality Index (AQI) data using Azure Machine Learning (Azure ML) to build an end-to-end machine learning pipeline. It includes data preprocessing, model training, evaluation, and deployment using the capabilities of Azure ML. The project leverages custom Python scripts, components, and pipelines to automate the entire machine learning workflow.
 
@@ -48,3 +55,28 @@ The XG Boost model achieved the best performance with an f1 score of 88% on the 
 ## Conclusion
 
 This project demonstrates the power of Azure Machine Learning in building scalable and reusable machine learning workflows. By leveraging the modularity of components and pipelines, this project automates the AQI analysis and prediction workflow, providing accurate insights into air quality levels.
+
+# Project 2: AQI Prediction and Classification Using Machine Learning and Clustering with TDA
+
+This project focuses on predicting and classifying AQI data using traditional machine learning techniques, as well as clustering techniques enhanced by Topological Data Analysis (TDA). The goal is to analyze AQI patterns and improve prediction accuracy through advanced data analysis methods.
+
+### Project Overview
+
+The primary aim of this project is to predict AQI levels and classify them into different categories using machine learning models, along with TDA for clustering and pattern recognition.
+
+### Key Features:
+- Implementation of various machine learning algorithms for prediction.
+- Application of TDA for clustering AQI data.
+- Comprehensive evaluation of model performance and clustering effectiveness.
+
+### Project Workflow
+
+1. **Data Preparation**: AQI data is cleaned and transformed for analysis.
+2. **Prediction Modeling**: Various machine learning models are employed to predict AQI levels.
+3. **Clustering with TDA**: Clustering techniques are applied using TDA to identify patterns in the data.
+4. **Model Evaluation**: Models are evaluated based on accuracy, precision, and clustering performance.
+
+### Conclusion
+
+This project demonstrates the effectiveness of combining traditional machine learning approaches with TDA for improved AQI prediction and classification. By leveraging both methods, it aims to provide deeper insights into air quality patterns and trends.
+
