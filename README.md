@@ -1,4 +1,4 @@
-# AQI Analysis and Prediction Projects
+# Decennial Analysis of Air Quality Indices Employing Machine-Learning and Topological Data Analysis
 
 This repository contains two distinct projects focusing on Air Quality Index (AQI) analysis and prediction:
 
