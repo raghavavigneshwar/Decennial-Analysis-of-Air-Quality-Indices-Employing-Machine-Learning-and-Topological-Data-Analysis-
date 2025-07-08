@@ -1,9 +1,9 @@
-# Decennial Analysis of Air Quality Indices Employing Machine-Learning and Topological Data Analysis
+# Air Quality Index (AQI) Forecasting and COVID-19 Impact Analysis Using Time Series Models and Topological Data Analysis
 
 This repository contains two distinct projects focusing on Air Quality Index (AQI) analysis and prediction:
 
 1. **AQI Analysis Using Azure Machine Learning**
-2. **AQI Prediction and Classification Using Machine Learning and Clustering with TDA**
+2. **AQI Time Series Forecasting and Clustering with TDA**
 
 # Project 1: AQI Analysis Using Azure Machine Learning
 
@@ -56,27 +56,79 @@ The XG Boost model achieved the best performance with an f1 score of 88% on the 
 
 This project demonstrates the power of Azure Machine Learning in building scalable and reusable machine learning workflows. By leveraging the modularity of components and pipelines, this project automates the AQI analysis and prediction workflow, providing accurate insights into air quality levels.
 
-# Project 2: AQI Prediction and Classification Using Machine Learning and Clustering with TDA
+# Project 2: AQI Forecasting and Clustering Using Time Series Models and Topological Data Analysis (TDA)
 
-This project focuses on predicting and classifying AQI data using traditional machine learning techniques, as well as clustering techniques enhanced by Topological Data Analysis (TDA). The goal is to analyze AQI patterns and improve prediction accuracy through advanced data analysis methods.
+This project focuses on forecasting and analyzing **Air Quality Index (AQI)** data using advanced **time series models** along with clustering techniques enhanced by **Topological Data Analysis (TDA)**. The goal is to accurately predict AQI trends, identify pollution patterns, and uncover hidden structures within the data to support **environmental decision-making**.
 
-### Project Overview
+---
 
-The primary aim of this project is to predict AQI levels and classify them into different categories using machine learning models, along with TDA for clustering and pattern recognition.
+## 📌 Project Overview
 
-### Key Features:
-- Implementation of various machine learning algorithms for prediction.
-- Application of TDA for clustering AQI data.
-- Comprehensive evaluation of model performance and clustering effectiveness.
+The primary objective of this project is to forecast AQI levels across major Indian cities using **ARIMA, SARIMA, Facebook Prophet, and NeuralProphet**, while applying **TDA-based clustering** to reveal deeper insights and patterns in the air quality data.
 
-### Project Workflow
+---
 
-1. **Data Preparation**: AQI data is cleaned and transformed for analysis.
-2. **Prediction Modeling**: Various machine learning models are employed to predict AQI levels.
-3. **Clustering with TDA**: Clustering techniques are applied using TDA to identify patterns in the data.
-4. **Model Evaluation**: Models are evaluated based on accuracy, precision, and clustering performance.
+## 🚀 Key Features
 
-### Conclusion
+- 📊 **Time Series Forecasting**: Implementation of multiple time series models to predict future AQI trends.
+- 🔍 **Topological Data Analysis (TDA) for Clustering**: Applied TDA to cluster AQI data and identify complex patterns beyond traditional methods.
+- 📈 **Model Evaluation**: Comprehensive evaluation of forecast accuracy and clustering effectiveness.
 
-This project demonstrates the effectiveness of combining traditional machine learning approaches with TDA for improved AQI prediction and classification. By leveraging both methods, it aims to provide deeper insights into air quality patterns and trends.
+---
 
+## 🔗 Technologies Used
+
+- **Python**
+- **ARIMA, SARIMA (Statsmodels)**
+- **Facebook Prophet, NeuralProphet**
+- **Scikit-learn**
+- **Topological Data Analysis (TDA)**
+- **Pandas, Matplotlib, Seaborn**
+
+---
+
+## 🛠 Project Workflow
+
+1. **Data Preparation**  
+   AQI data from multiple Indian cities is collected, cleaned, and transformed for analysis.
+
+2. **Time Series Forecasting**  
+   Forecasting AQI using **ARIMA, SARIMA, Facebook Prophet, and NeuralProphet** to capture trends, seasonality, and anomalies.
+
+3. **Clustering with TDA**  
+   Applying **Topological Data Analysis (TDA)** techniques for clustering and pattern recognition in AQI data.
+
+---
+
+## 📊 Model Performance (Best Model: Facebook Prophet)
+
+| Metric | Train  | Test  |
+|--------|--------|-------|
+| MAE    | 12.10  | 9.72  |
+| MSE    | 244.85 | 189.48 |
+| RMSE   | 15.65  | 13.77 |
+
+---
+
+## 🌍 COVID-19 Lockdown Impact Analysis
+
+Analyzed the impact of the **COVID-19 lockdown (March–May 2020)** on air quality across cities:
+
+| City       | Lockdown AQI (2020) | Avg AQI (Other Years) | AQI Reduction (%) |
+|-----------|---------------------|-----------------------|-------------------|
+| Delhi     | 127.41              | 198.16                | 35.7%             |
+| Mumbai    | 75.08               | 108.35                | 30.7%             |
+| Hyderabad | 72.17               | 94.49                 | 23.6%             |
+| Chennai   | 56.25               | 69.14                 | 18.6%             |
+| Kolkata   | 78.99               | 95.40                 | 17.2%             |
+| Ahmedabad | 125.13              | 139.41                | 10.2%             |
+
+---
+
+## 📌 Conclusion
+
+- The **Facebook Prophet** model delivered the most accurate AQI forecasts with lower error metrics.
+- The use of **Topological Data Analysis (TDA)** enhanced the clustering process by uncovering hidden patterns and structures in the data.
+- The project demonstrates the effectiveness of combining **time series forecasting** and **unsupervised clustering** for meaningful **environmental analysis and risk assessment**.
+
+---
